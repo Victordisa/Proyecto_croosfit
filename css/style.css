@@ -1,0 +1,759 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+.contenedor{
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c c c";
+}
+
+.navegador{
+    grid-area: a;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    margin-left: 50px;
+}
+
+
+.navegador ul{
+    display: flex;
+    
+}
+
+.navegador ul a{
+    margin-right: 40px;
+    color: white;
+    font-size: 15px;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navegador a:hover{
+    color:orange;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.seccion__inicio{
+    grid-area: b;
+    display: flex;
+    background-image: url("../assets/imagen_home.jpg"); /*agrandar imagen */
+    height: 900px;
+}
+.seccion__planes{
+    grid-area: b;
+    display: flex;
+    background-image: url("../assets/imagen_home.jpg"); /*agrandar imagen */
+    height: 900px;
+}
+.seccion__contactenos{
+    grid-area: b;
+    display: flex;
+    background-color: black;
+    height: 900px;
+}
+.seccion__nosotros{
+    grid-area: b;
+    background-image: url("../assets/imagen_home.jpg"); /*agrandar imagen */
+    height: 900px;
+}
+.seccion__faq{
+    grid-area: b;
+    background-image: url("../assets/imagen_home.jpg"); /*agrandar imagen */
+    height: 900px;
+}
+
+.seccion__texto__inicio{
+    display: inline-block;
+    color: white;
+    margin: 150px 1000px 0 120px;
+}
+
+.seccion__texto__inicio h1{
+    margin-bottom: 30px;
+    color: orange;
+}
+
+.seccion__texto__inicio h2{
+    margin-bottom: 30px;
+}
+
+.seccion__texto__inicio p{
+    margin-bottom: 30px;
+}
+
+.seccion__texto__inicio a{
+    color: white;
+    padding: 10px;
+    background-color: orange;
+    border: 2px solid orange;
+    text-decoration: none;
+}
+
+.seccion__texto__inicio a:hover{
+    color: black;
+}
+
+.seccion__planes{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "a b c";
+
+}
+
+.seccion__plan1{
+    grid-area: a;
+    border: 5px solid white;
+    margin: 40% 0;
+    background-color: black;
+}
+
+.seccion__planes .seccion__plan1 h3{
+    margin-left: 35%;
+    color: white;
+}
+
+.seccion__planes .seccion__plan1 img{
+    height: 200px;
+    width: 430px;
+    margin: 10px 15px;
+}
+.seccion__planes .seccion__plan1 p{
+    color: white;
+    margin-bottom: 15px;
+}
+.seccion__planes .seccion__plan1 a{
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.seccion__plan2{
+    grid-area: b;
+    border: 5px solid white;
+    margin: 40% 0;
+    background-color: black;
+}
+
+.seccion__planes .seccion__plan2 h3{
+    margin-left: 35%;
+    color: white;
+}
+
+.seccion__planes .seccion__plan2 img{
+    height: 200px;
+    width: 430px;
+    margin: 10px 15px;
+}
+.seccion__planes .seccion__plan2 p{
+    color: white;
+    margin-bottom: 15px;
+}
+.seccion__planes .seccion__plan2 a{
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.seccion__plan3{
+    grid-area: c;
+    border: 5px solid white;
+    margin: 40% 0;
+    background-color: black;
+}
+
+.seccion__planes .seccion__plan3 h3{
+    margin-left: 35%;
+    color: white;
+}
+.seccion__planes .seccion__plan3 img{
+    height: 200px;
+    width: 430px;
+    margin: 10px 15px;
+}
+.seccion__planes .seccion__plan3 p{
+    color: white;
+    margin-bottom: 15px;
+}
+.seccion__planes .seccion__plan3 a{
+    color: white;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: orange;
+    border: 2px solid orange;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.seccion__planes a:hover{
+    color: black;
+}
+
+.formulario{
+    align-self: center;
+    color: white;
+    background-color: orange;
+    padding: 307px 100px;
+    margin-top: 4px;
+}
+.Nombre__ap input{
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.email{
+    text-align: center;
+}
+.email input{
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin: 15px;
+    outline: none;
+    cursor: pointer;
+}
+.edo__civil{
+    border-radius: 5px;
+    text-align: center;
+}
+.edo__civil select{
+    background: none;
+    border:none;
+    border-bottom: 1px solid black;
+    margin: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.noticias{
+    text-align: center;
+}
+.form{
+    margin-top: 15px;
+    text-align: center;
+    
+}
+.form input{
+    cursor: pointer;
+}
+
+.contactos h2{
+    display: flex;
+    color: white;
+    justify-content: left;
+    margin-left:70px;
+    margin-top: 80px;
+
+}
+.contactos p{
+    color: white;
+    margin: 50px 70px;
+}
+.seccion__nosotros h2{
+    color: white;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.seccion__nosotros p{
+    color: white;
+    margin: 40px 750px 80px 40px;
+}
+.Pregunta__faqs{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+ }
+
+ .Respuesta__faqs{
+    color: white;
+    display: block;
+    font-size: 18px;
+    margin: 100px 350px;
+ }
+/*LOS BOTONES DE COMPRAR NO VAN A NINGUN SITIO*/
+
+footer{
+    grid-area: c;
+    background-color: rgb(5, 5, 5);
+
+}
+
+.Pie_redes{
+    min-width: 700px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    
+}
+
+.Pie_redes a {
+    display: inline-flex;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 60px;
+    color: #f1f1f1;
+    transition: all .4s ease-in-out;
+  }
+
+  .Pie_redes a:hover {
+    transform: scale(1.2);
+}
+
+/*----------------------tablet-----------------------*/
+
+@media (max-width: 768px) {
+    
+    .seccion__texto__inicio{
+        margin: 150px 400px 0 120px;
+    }
+    .seccion__planes{
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+        }
+        .seccion__plan1{
+            grid-area: a;
+            border: 5px solid white;
+            margin: 5px 60px;
+            background-color: black;
+            width: 650px;
+            
+        }
+            
+        .seccion__planes .seccion__plan1 h3{
+            margin-left: 40%;
+            color: white;
+        }
+            
+        .seccion__planes .seccion__plan1 img{
+            height: 150px;
+            width: 450px;
+            margin: 8px 90px;
+        }
+        .seccion__planes .seccion__plan1 p{
+            color: white;
+            font-size: 10px;
+        }
+        .seccion__planes .seccion__plan1 a{
+            color: white;
+            font-size: 10px;
+            padding: 6px;
+            margin-left: 5px;
+            background-color: orange;
+            border: 2px solid orange;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        .seccion__plan2{
+            grid-area: b;
+            border: 5px solid white;
+            margin: 5px 60px;
+            background-color: black;
+            width: 650px;
+            
+        }
+            
+        .seccion__planes .seccion__plan2 h3{
+            margin-left: 40%;
+            color: white;
+        }
+            
+        .seccion__planes .seccion__plan2 img{
+            height: 150px;
+            width: 450px;
+            margin: 8px 90px;
+        }
+        .seccion__planes .seccion__plan2 p{
+            color: white;
+            font-size: 10px;
+        }
+        .seccion__planes .seccion__plan2 a{
+            color: white;
+            font-size: 10px;
+            padding: 6px;
+            margin-left: 5px;
+            background-color: orange;
+            border: 2px solid orange;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        .seccion__plan3{
+            grid-area: c;
+            border: 5px solid white;
+            margin: 5px 60px;
+            background-color: black;
+            width: 650px;
+            
+        }
+            
+        .seccion__planes .seccion__plan3 h3{
+            margin-left: 40%;
+            color: white;
+        }
+            
+        .seccion__planes .seccion__plan3 img{
+            height: 150px;
+            width: 450px;
+            margin: 8px 90px;
+        }
+        .seccion__planes .seccion__plan3 p{
+            color: white;
+            font-size: 10px;
+        }
+        .seccion__planes .seccion__plan3 a{
+            color: white;
+            font-size: 10px;
+            padding: 6px;
+            margin-left: 5px;
+            background-color: orange;
+            border: 2px solid orange;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        .seccion__nosotros{
+            height: 500px;
+        }
+        .seccion__contactenos{
+            height: 600px;
+        }
+        .formulario{
+            margin: 50px;
+            text-align: center;
+            padding: 55px;
+            background-color: orange;
+             box-shadow: 0 5px 10px -5px rgb(124, 122, 122);
+             border-radius: 5px;
+        
+        }
+        .Nombre__ap input{
+            font-size: 15px;
+            margin: 20px 10px;
+            background: none;
+            border:none;
+            border-bottom: 1px solid black;
+            outline: none;
+            cursor: pointer;
+            
+        }
+        .noticias input{
+            margin-top: 20px;
+        }
+    
+        .form{
+            margin-top: 5px;
+        }
+        .form input{
+            font-size: 11px;
+        }
+        
+        .seccion__nosotros p{
+            color: white;
+            margin: 40px 50px;
+            font-size: 15px;
+        }
+        .Respuesta__faqs{
+            color: white;
+            font-size: 15px;
+            margin: 30px 90px;
+            
+         }
+         .seccion__faq{
+            height: 500px;
+         }
+
+
+}
+
+/*-----------------Mobile--------------*/
+
+@media(max-width:576px){
+    .contenedor{
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "a a"
+        "b b"
+        "c c"; 
+    }
+    .checkbtn{ 
+        display: block;
+        margin-left: 100px;
+        margin-top: 10px;
+
+    }
+
+
+    .logo{
+        display: flex;
+    }
+    .logo img{
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 40px;
+        width: 70px;
+    }
+    .navegador{
+        height: 80px;
+    }
+    .navegador ul{
+        position:relative;
+        flex-direction: column;
+        border-radius: 7px;
+        background: orange;
+        left: -190%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navegador ul li{
+        display: block;
+        margin-left: 20px;
+        margin-top: 50px;
+        
+    }
+    .navegador ul li a{
+        font-size: 15px;
+        
+        
+    }
+    .navegador ul li:first-child{
+        margin-top: 220px;
+    }
+    .navegador ul li:last-child{
+        margin-bottom: 40px;
+    }
+
+    #check:checked ~ ul{
+        left: -105%;
+    }
+    .seccion__inicio{
+        height: 600px;
+    }
+    .seccion__texto__inicio{
+        display: inline-block;
+        color: white;
+        margin: 100px 200px 20px 60px;
+    }
+    .seccion__texto__inicio h1{
+        margin-bottom: 30px;
+        font-size: 20px;
+        color: orange;
+    }
+    
+    .seccion__texto__inicio h2{
+        margin-bottom: 30px;
+        font-size: 17px;
+    }
+    
+    .seccion__texto__inicio p{
+        margin-bottom: 30px;
+        font-size: 13px;
+    }
+
+    .seccion__planes{
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "a"
+        "b"
+        "c";
+        }
+    .seccion__plan1{
+        grid-area: a;
+        border: 5px solid white;
+        margin: 5px 10px 5px -5px;
+        background-color: black;
+    }
+        
+    .seccion__planes .seccion__plan1 h3{
+        margin-left: 20%;
+        color: white;
+    }
+        
+    .seccion__planes .seccion__plan1 img{
+        height: 150px;
+        width: 270px;
+        margin: 8px 25px;
+    }
+    .seccion__planes .seccion__plan1 p{
+        color: white;
+        font-size: 10px;
+    }
+    .seccion__planes .seccion__plan1 a{
+        color: white;
+        font-size: 10px;
+        padding: 6px;
+        margin-left: 5px;
+        background-color: orange;
+        border: 2px solid orange;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .seccion__plan2{
+        grid-area: b;
+        border: 5px solid white;
+        margin: 5px 10px 5px -5px;
+        background-color: black;
+    }
+    
+    .seccion__planes .seccion__plan2 h3{
+        margin-left: 20%;
+        color: white;
+    }
+    
+    .seccion__planes .seccion__plan2 img{
+        height: 150px;
+        width: 270px;
+        margin: 8px 25px;
+    }
+    .seccion__planes .seccion__plan2 p{
+        color: white;
+        font-size: 10px;
+    }
+    .seccion__planes .seccion__plan2 a{
+        color: white;
+        font-size: 10px;
+        padding: 6px;
+        margin-left: 5px;
+        background-color: orange;
+        border: 2px solid orange;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .seccion__plan3{
+        grid-area: c;
+        border: 5px solid white;
+        margin: 5px 10px 5px -5px;
+        background-color: black;
+    }
+    
+    .seccion__planes .seccion__plan3 h3{
+        margin-left: 20%;
+        color: white;
+    }
+    
+    .seccion__planes .seccion__plan3 img{
+        height: 150px;
+        width: 270px;
+        margin: 8px 25px;
+    }
+    .seccion__planes .seccion__plan3 p{
+        color: white;
+        font-size: 10px;
+    }
+    .seccion__planes .seccion__plan3 a{
+        color: white;
+        font-size: 10px;
+        padding: 6px;
+        margin-left: 5px;
+        background-color: orange;
+        border: 2px solid orange;
+        border-radius: 3px;
+        text-decoration: none;
+    }
+    .formulario{
+        grid-area: c;
+        color: black;
+        text-align: center;
+        margin: 50px 50px;
+        padding: 20px 25px 65px 25px;
+        background-color: orange;
+         box-shadow: 0 5px 10px -5px rgb(124, 122, 122);
+         border-radius: 5px;
+    
+    }
+    .Nombre__ap input{
+        font-size: 13px;
+        margin: 10px 0;
+        background: none;
+        border:none;
+        border-bottom: 1px solid black;
+        outline: none;
+        cursor: pointer;
+        
+    }
+    .noticias input{
+        margin-top: 20px;
+    }
+
+    .form{
+        margin-top: 5px;
+    }
+    .form input{
+        font-size: 11px;
+    }
+    .seccion__nosotros{
+        height: 500px;
+    }
+    .seccion__nosotros p{
+        color: white;
+        margin: 40px 60px 0 40px;
+        font-size: 12px;
+    }
+    .Respuesta__faqs{
+        color: white;
+        font-size: 15px;
+        margin: 15px 20px 30px 20px;
+        
+     }
+     .seccion__faq{
+        height: 500px;
+     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
